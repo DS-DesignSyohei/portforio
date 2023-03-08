@@ -1,4 +1,5 @@
- <a href="#" class="btn-slice">
+<HTML>
+<a href="#" class="btn-slice">
       <div class="top">
          <span>HOME</span>
       </div>
@@ -7,3 +8,5 @@
          <span>HOME</span>
       </div>
 </a>
+
+<CSS>
