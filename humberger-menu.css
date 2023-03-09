@@ -1,0 +1,85 @@
+/* humberger-menu-btn */
+.burger {
+     margin-left: 40px;
+    border-radius: 4px;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+}
+
+.input-checkbox {
+    display: none;
+  }
+   
+  .nav-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    background-color: #b527cf;
+    border: none;
+    border-radius: 15%;
+    cursor: pointer;
+  }
+   
+  .nav-button span::before,
+  .nav-button span::after,
+  .nav-button span {
+    background-color: #ffffff;
+    width: 32px;
+    height: 3px;
+    border-radius: 2px;
+    transition: 0.3s;
+  }
+   
+  .nav-button span::before,
+  .nav-button span::after {
+    content: "";
+    position: relative;
+    display: inline-block;
+  }
+   
+  .nav-button span::before {
+    top: -22px;
+  }
+   
+  .nav-button span::after {
+  top: -20px;
+  }
+   
+  .input-checkbox:checked + .nav-button span {
+    background-color: transparent;
+  }
+   
+  .input-checkbox:checked + .nav-button span::before {
+    top: -13px;
+    transform: rotate(135deg);
+  }
+   
+  .input-checkbox:checked + .nav-button span::after {
+    top: -32px;
+    transform: rotate(-135deg);
+  }
+
+/* in-humbergermenu */
+.menu {
+    font-size: 500px;
+    color: #fff;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 100vw;
+    height: 100vh;
+    background-color: #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: none;
+}
+
+.menu.is-active {
+    display: flex;
+}
